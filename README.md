@@ -2,7 +2,7 @@
 ###### Screenshot
 
 <p align="center">
-<img src="Screenshots/all_in_one.png">
+<img src="screenshots/all_in_one.png">
 </p>
 
 
@@ -10,19 +10,19 @@
 ###### Screenshot
 
 <p align="center">
-<img src="Screenshots/Profile.png">
+<img src="screenshots/Profile.png">
 </p>
 
 ##### Profile page  
 ###### Screenshot
 
 <p align="center">
-<img src="Screenshots/Gallary.png">
+<img src="screenshots/Gallary.png">
 </p>
 
 ##### Profile page
 ###### Screenshot
 
 <p align="center">
-<img src="Screenshots/contact.png">
+<img src="screenshots/contact.png">
 </p>
