@@ -6,21 +6,21 @@
 </p>
 
 
-##### Profile page
+##### Profile Part
 ###### Screenshot
 
 <p align="center">
 <img src="screenshots/Profile.png">
 </p>
 
-##### Profile page  
+##### Gallary Part  
 ###### Screenshot
 
 <p align="center">
 <img src="screenshots/Gallary.png">
 </p>
 
-##### Profile page
+##### Contact Part
 ###### Screenshot
 
 <p align="center">
