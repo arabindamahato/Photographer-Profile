@@ -1,0 +1,36 @@
+/*these are tags */
+body{
+	background-color: #F8F8F8!important;
+}
+
+/*these are id */
+#profile-pic{
+	height: 170px;
+	width: 170px;
+	border-radius: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+ /*These are id */
+#profile-wrapper{
+	text-align: center;
+}
+
+/*these are tags */
+ul{
+	padding: 0;
+	list-style-type: none;
+}
+
+/*these are class */
+.social-links ul, li{
+	list-style-type: none;
+	display: inline-block;
+}
+
+/*these are class */
+.social{
+	width: 20px;
+	height: 20px;
+}

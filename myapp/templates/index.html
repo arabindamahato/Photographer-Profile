@@ -1,0 +1,162 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>INDEX</title>
+	<!-- <link rel="stylesheet" type="text/css" href="{% static '/css/main.css' %}"> -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="{% static '/css/main.css' %}">
+</head>
+<body>
+
+<!-- navbar start -->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+	  <a class="navbar-brand" href="#">Photographer</a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+	  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+	    <div class="navbar-nav">
+	      <!-- <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a> -->
+	      <!-- <a class="nav-item nav-link" href="#">Gallary</a> -->
+	      <!-- <a class="nav-item nav-link" href="#">Pricing</a> -->
+	      <!-- <a class="nav-item nav-link disabled" href="#">Disabled</a> -->
+	    </div>
+	  </div>
+</nav>
+
+<!-- navbar end -->
+
+<div class="container mt-4">
+		<div class="jumbotron jumbotron-fluid">
+		  <div class="container">
+		    <h1 class="display-4">{{ top_carousel_heading }}</h1>
+		    <p class="lead">{{ top_carousel_paragraph }}</p>
+
+		  </div>
+		</div>
+		<div class="row mt-2">
+			<div class="col-md-3">
+				
+				<div class="card card-body h-100 border-info" id='profile-wrapper'>
+					<img id='profile-pic' src="{{ profile_picture.url }}" alt="profile img" height="170px" width="170px"><hr>
+					<h4>{{ profile_heading }}</h4>
+					<p>{{ profile_intro }}</p>
+					<ul class="social-links">
+						<li><a href="https://www.facebook.com/arabinda.mahato.188"> <img class="social" src="{% static 'images/facebook.png' %}" width="25px"></a>
+						 </li>	
+						<li> <a href="https://www.instagram.com/aarvindmahato/"><img class="social" src="{% static 'images/instagram.png' %}" width="25px"></a>
+						 </li>	
+						<li> <a href="https://wa.me/+917602125658"><img class="social" src="{% static 'images/whatsapp.png' %}" width="25px"></a>
+						 </li>	
+						<li><a href="https://github.com/arabindamahato"> <img class="social" src="{% static 'images/github.png' %}" width="25px"></a> 
+						</li>
+						<li><a href="https://twitter.com/arabinda1512"> <img class="social" src="{% static 'images/twitter.png' %}" width="25px"></a> 
+						</li>	
+					</ul>	
+
+				</div>				
+			</div>
+
+
+
+
+			<div class="col-md-9">
+				<div class="card card-body h-100 border-info">
+					<h4>{{ upper_content_heading }}
+					</h4><hr>
+
+					<p>{{ first_para }}</p>
+					<p>{{ second_para }}</p>
+					<p>{{ third_para }}</p>
+
+					
+
+
+				</div>				
+			</div>			
+		</div>
+
+		<!-- gallary start	 -->
+
+			<div class="container mt-5">
+				<h3 align="center">Gallery</h3><hr>
+			<div class="row">		
+				{% for result in gallary_image %}
+			<div class="col-md-3">
+				<img src="{{result.gallary_image.url}}" width="200px" height="135px"> <hr>
+			</div>
+				{% endfor %}
+
+
+			
+					
+			</div>
+			<hr>
+			</div>
+
+
+
+		<!-- gallary start	 -->
+
+		<div class="row mt-5">
+			<div class="col-md-6">
+				<div class="card card-body h-100">
+					<h4>{{ lower_content_heading }}
+					</h4><hr>
+
+					<p>{{ first_para }}</p>
+					<p>{{ second_para }}</p>
+					<p>{{ third_para }}</p>
+	
+					
+			
+				</div>				
+			</div>
+			<div class="col-md-6">
+				<div class="card card-body h-100">
+					<h4>{{ lower_content_heading }}
+					</h4><hr>
+
+					<p>{{ first_para }}</p>
+					<p>{{ second_para }}</p>
+					<p>{{ third_para }}</p>
+
+					
+				</div>				
+			</div>			
+		</div>	
+	</div>
+
+
+	<div class="jumbotron jumbotron-fluid mt-5">
+  <div class="container">
+    <h1 class="display-4">Subscribe here</h1>
+    <p class="lead">To contact with me please enter your details Team will connect you soon</p>
+
+    <form method="POST">
+    	{% csrf_token %}
+	<div class="row">
+		<div class="col">
+		<input type="text" name="full_name" class="form-control" placeholder="Enter full name">
+		</div>
+		<div class="col">
+		<input type="text" name="email" class="form-control" placeholder="Enter email here">
+		</div>
+		<input type="submit" class="btn btn-danger" value="Subscribe">
+		<!-- <button type="button" class="btn btn-primary">Submit</button> -->
+
+	</div>
+</form>
+  </div>
+</div>
+	<div class="footer mb-10">
+  <p align="center"><strong>Footer</strong></p>
+	</div>
+</body>
+</html>
+
+
+
+
